@@ -40,66 +40,66 @@
     
     <!--9am-->
     <div class="row time-block">
-      <div class="col-sm-1" id="9" value="9">9am</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-1">9am</div>
+      <div class="col-sm-10"><textarea id="9" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
   
     <!--10am-->
     <div class="row time-block">
       <div class="col-sm-1 time-block">10am</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea id="10" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
     <!--11am-->
-    <div class="row">
+    <div class="row time-block">
       <div class="col-sm-1 time-block">11am</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea  id="11" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
     <!--12pm-->
-    <div class="row">
+    <div class="row time-block">
       <div class="col-sm-1 time-block">12pm</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea  id="12" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
     <!--1pm-->
-    <div class="row">
+    <div class="row time-block">
       <div class="col-sm-1 time-block">1pm</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea id="13" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
     <!--2pm-->
-    <div class="row">
+    <div class="row time-block">
       <div class="col-sm-1 time-block">2pm</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea  id="14" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
     <!--3pm-->
-    <div class="row">
+    <div class="row time-block">
       <div class="col-sm-1 time-block" >3pm</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea name="john" id="15" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
     <!--4pm-->
-    <div class="row">
+    <div class="row time-block">
       <div class="col-sm-1 time-block">4pm</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea name="john" id="16" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
     <!--5pm-->
-    <div class="row">
+    <div class="row time-block">
       <div class="col-sm-1 time-block">5pm</div>
-      <div class="col-sm-10 description"><textarea name="john" id="" cols="110" rows="3"></textarea></div>
-      <div class="col-sm-1 saveBtn"></div>
+      <div class="col-sm-10"><textarea name="john" id="17" cols="110" rows="3"></textarea></div>
+      <div class="col-sm-1 saveBtn"><i class="fa fa-save text-center"></i></div>
     </div>
 
 
@@ -114,13 +114,120 @@
 
     var currentTime = new Date().getHours();
 
-    console.log(currentTime);
-
+    //9am
     if((currentTime - 9)==0) {
+      $("#9").addClass("present");
       
     }
+    else if((currentTime - 9)>0) {
+      $("#9").addClass("past");
+    }
+    else {
+      $("#9").addClass("future");
+    }
 
-    
+    //10am
+    if((currentTime - 10)==0) {
+      $("#10").addClass("present");
+      
+    }
+    else if((currentTime - 10)>0) {
+      $("#10").addClass("past");
+    }
+    else {
+      $("#10").addClass("future");
+    }
+
+    //11am
+    if((currentTime - 11)==0) {
+      $("#11").addClass("present");
+      
+    }
+    else if((currentTime - 11)>0) {
+      $("#11").addClass("past");
+    }
+    else {
+      $("#11").addClass("future");
+    }
+
+    //12pm
+    if((currentTime - 12)==0) {
+      $("#12").addClass("present");
+      
+    }
+    else if((currentTime - 12)>0) {
+      $("#12").addClass("past");
+    }
+    else {
+      $("#12").addClass("future");
+    }
+
+    //13pm
+    if((currentTime - 13)==0) {
+      $("#13").addClass("present");
+      
+    }
+    else if((currentTime - 13)>0) {
+      $("#13").addClass("past");
+    }
+    else {
+      $("#13").addClass("future");
+    }
+
+    //14pm
+    if((currentTime - 14)==0) {
+      $("#14").addClass("present");
+      
+    }
+    else if((currentTime - 14)>0) {
+      $("#14").addClass("past");
+    }
+    else {
+      $("#14").addClass("future");
+    }
+
+    //15pm
+    if((currentTime - 15)==0) {
+      $("#15").addClass("present");
+      
+    }
+    else if((currentTime - 15)>0) {
+      $("#15").addClass("past");
+    }
+    else {
+      $("#15").addClass("future");
+    }
+
+    //16pm
+    if((currentTime - 16)==0) {
+      $("#16").addClass("present");
+      
+    }
+    else if((currentTime - 16)>0) {
+      $("#16").addClass("past");
+    }
+    else {
+      $("#16").addClass("future");
+    }
+
+    //17pm
+    if((currentTime - 17)==0) {
+      $("#17").addClass("present");
+      
+    }
+    else if((currentTime - 17)>0) {
+      $("#17").addClass("past");
+    }
+    else {
+      $("#17").addClass("future");
+    }
+
+    $("i").on("click", function() {
+      var text = $(this).val();
+      console.log(text);
+      $("textarea").html(text);
+    });
+
   </script>
 </body>
 
